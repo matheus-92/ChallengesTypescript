@@ -63,10 +63,9 @@ function firstVersion() {
 function findGreatestProduct(sequenceSize) {
     const numbersMatrix = (0, createMatrix_1.createMatrixNumbers)(numbersGrid);
     const rowSize = numbersMatrix.length;
-    const columnSize = numbersMatrix[0].length;
     const adjecentMultiplicationResult = [];
     for (let row = 0; row < rowSize; row++) {
-        for (let column = 0; column < columnSize; column++) {
+        for (let column = 0; column < numbersMatrix[row].length; column++) {
             const directionsValues = [
                 Array.from({ length: sequenceSize }, (_, i) => [row, column + i]),
                 Array.from({ length: sequenceSize }, (_, i) => [row + i, column]),
@@ -74,7 +73,7 @@ function findGreatestProduct(sequenceSize) {
                 Array.from({ length: sequenceSize }, (_, i) => [row + i, column - i])
             ];
             for (const coords of directionsValues) {
-                if (coords.every(([row, col]) => row >= 0 && row < rowSize && col >= 0 && col < columnSize)) {
+                if (coords.every(([row, col]) => row >= 0 && row < rowSize && col >= 0 && col < numbersMatrix[row].length)) {
                     const product = coords.reduce((accumulator, [row, col]) => accumulator * numbersMatrix[row][col], 1);
                     adjecentMultiplicationResult.push(product);
                 }

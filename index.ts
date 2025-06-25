@@ -1,3 +1,3 @@
-import { findGreatestProduct } from "./Challenges/largestProductInaGrid";
+import { highestTriangle } from "./Challenges/highlyDivisibleTriangularNumber";
 
-findGreatestProduct(4);
+highestTriangle(500);
