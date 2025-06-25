@@ -1,3 +1,3 @@
-import { highestTriangle } from "./Challenges/highlyDivisibleTriangularNumber";
+import {  firstTenDigits } from "./Challenges/largeSum";
 
-highestTriangle(500);
+firstTenDigits();

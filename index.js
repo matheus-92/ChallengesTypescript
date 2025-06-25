@@ -1,4 +1,4 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const highlyDivisibleTriangularNumber_1 = require("./Challenges/highlyDivisibleTriangularNumber");
-(0, highlyDivisibleTriangularNumber_1.highestTriangle)(500);
+const largeSum_1 = require("./Challenges/largeSum");
+(0, largeSum_1.firstTenDigits)();
