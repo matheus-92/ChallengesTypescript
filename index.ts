@@ -1,3 +1,3 @@
-import { findNumbers } from "./Challenges/pythagoreanTriplets";
+import {sumOfPrimes} from './Challenges/summationOfPrimes'
 
-findNumbers(1000);
+sumOfPrimes(2000000);

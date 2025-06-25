@@ -1,5 +1,10 @@
 export function isPrime(number:number){
 
+    if(number == 1)
+    {
+        return false;
+    }
+
     if(number == 2 ||number == 3 || number == 5)
     {
         return true;
