@@ -6,7 +6,6 @@ function sumOfPrimes(numberLimiter) {
     let primes = [];
     for (let i = 1; i < numberLimiter; i++) {
         if ((0, isPrime_1.isPrime)(i)) {
-            console.log(i);
             primes.push(i);
         }
     }

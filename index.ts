@@ -1,3 +1,3 @@
-import {sumOfPrimes} from './Challenges/summationOfPrimes'
+import { findGreatestProduct } from "./Challenges/largestProductInaGrid";
 
-sumOfPrimes(2000000);
+findGreatestProduct(4);

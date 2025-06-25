@@ -1,4 +1,4 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const summationOfPrimes_1 = require("./Challenges/summationOfPrimes");
-(0, summationOfPrimes_1.sumOfPrimes)(2000000);
+const largestProductInaGrid_1 = require("./Challenges/largestProductInaGrid");
+(0, largestProductInaGrid_1.findGreatestProduct)(4);
