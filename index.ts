@@ -1,3 +1,3 @@
-import {  firstTenDigits } from "./Challenges/largeSum";
+import {  longestRide } from "./Challenges/longestCollatzSequence";
 
-firstTenDigits();
+longestRide(1);

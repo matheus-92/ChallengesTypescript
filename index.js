@@ -1,4 +1,4 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const largeSum_1 = require("./Challenges/largeSum");
-(0, largeSum_1.firstTenDigits)();
+const longestCollatzSequence_1 = require("./Challenges/longestCollatzSequence");
+(0, longestCollatzSequence_1.longestRide)(1);
