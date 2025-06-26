@@ -1,3 +1,3 @@
-import { getLetterCount  } from "./Challenges/numberLetterCounts";
+import { factorialDigitSum  } from "./Challenges/factorialDigitSum";
 
-getLetterCount()
+factorialDigitSum()
