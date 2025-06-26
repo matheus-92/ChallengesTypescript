@@ -1,3 +1,3 @@
-import {  longestRide } from "./Challenges/longestCollatzSequence";
+import { findPaths  } from "./Challenges/latticePaths";
 
-longestRide(1);
+findPaths(20,20)

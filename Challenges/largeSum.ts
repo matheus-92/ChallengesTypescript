@@ -1,4 +1,5 @@
 import { createMatrixNumbers } from "../Helpers/createMatrix"
+import { sumArray } from "../Helpers/sumArrays"
 
 const numbers: string = `37107287533902102798797998220837590246510135740250
                         46376937677490009712648124896970078050417018260538
@@ -101,38 +102,11 @@ const numbers: string = `37107287533902102798797998220837590246510135740250
                         20849603980134001723930671666823555245252804609722
                         53503534226472524250874054075591789781264330331690` 
 
-function _sumArray(a:number[], b:number[]):number[]
-{
-    const result:number[] = [];
-    let carry = 0;
 
-    const maxLength = Math.max(a.length, b.length);
-
-    for (let i = 0; i < maxLength; i++) {
-        const indexA = a.length - 1 - i;
-        const indexB = b.length - 1 - i;
-
-        const digitA = indexA >= 0 ? a[indexA] : 0;
-        const digitB = indexB >= 0 ? b[indexB] : 0;
-
-        const sum = digitA + digitB + carry;
-
-        result.unshift(sum % 10);
-
-        carry = Math.floor(sum / 10);
-    }
-
-    
-    if (carry > 0) {
-        result.unshift(carry);
-    }
-
-    return result;
-}
 export function firstTenDigits(){
     let matrix:number[][] = createMatrixNumbers(numbers)
     
-    let sumResult:number[] = matrix.reduce((acumulator, current)=>_sumArray(acumulator, current))
+    let sumResult:number[] = matrix.reduce((acumulator, current)=>sumArray(acumulator, current))
 
     console.log(sumResult.splice(0,10))
 }

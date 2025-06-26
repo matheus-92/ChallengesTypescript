@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.firstTenDigits = firstTenDigits;
 const createMatrix_1 = require("../Helpers/createMatrix");
+const sumArrays_1 = require("../Helpers/sumArrays");
 const numbers = `37107287533902102798797998220837590246510135740250
                         46376937677490009712648124896970078050417018260538
                         74324986199524741059474233309513058123726617309629
@@ -102,26 +103,8 @@ const numbers = `37107287533902102798797998220837590246510135740250
                         72107838435069186155435662884062257473692284509516
                         20849603980134001723930671666823555245252804609722
                         53503534226472524250874054075591789781264330331690`;
-function _sumArray(a, b) {
-    const result = [];
-    let carry = 0;
-    const maxLength = Math.max(a.length, b.length);
-    for (let i = 0; i < maxLength; i++) {
-        const indexA = a.length - 1 - i;
-        const indexB = b.length - 1 - i;
-        const digitA = indexA >= 0 ? a[indexA] : 0;
-        const digitB = indexB >= 0 ? b[indexB] : 0;
-        const sum = digitA + digitB + carry;
-        result.unshift(sum % 10);
-        carry = Math.floor(sum / 10);
-    }
-    if (carry > 0) {
-        result.unshift(carry);
-    }
-    return result;
-}
 function firstTenDigits() {
     let matrix = (0, createMatrix_1.createMatrixNumbers)(numbers);
-    let sumResult = matrix.reduce((acumulator, current) => _sumArray(acumulator, current));
+    let sumResult = matrix.reduce((acumulator, current) => (0, sumArrays_1.sumArray)(acumulator, current));
     console.log(sumResult.splice(0, 10));
 }
