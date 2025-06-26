@@ -1,3 +1,3 @@
-import { findPaths  } from "./Challenges/latticePaths";
+import { powerDigitSum  } from "./Challenges/powerSumDigit";
 
-findPaths(20,20)
+powerDigitSum()
