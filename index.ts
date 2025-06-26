@@ -1,3 +1,3 @@
-import { powerDigitSum  } from "./Challenges/powerSumDigit";
+import { getLetterCount  } from "./Challenges/numberLetterCounts";
 
-powerDigitSum()
+getLetterCount()
