@@ -9,8 +9,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const nameScores_1 = require("./Challenges/nameScores");
-const account = () => __awaiter(void 0, void 0, void 0, function* () {
-    yield (0, nameScores_1.sumNames)();
-});
-account;
+exports.sumNames = sumNames;
+const readFile_1 = require("../Helpers/readFile");
+function sumNames() {
+    return __awaiter(this, void 0, void 0, function* () {
+        console.log(yield (0, readFile_1.readFile)("D:\\Downloads\\0022_names.txt"));
+    });
+}
