@@ -1,4 +1,4 @@
-import { sumOfIntegers } from "./Challenges/nonAbundantSums";
+import { distinctPowers } from "./Challenges/distinctPowers";
 
 
-sumOfIntegers();
+distinctPowers();
