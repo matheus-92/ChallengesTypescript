@@ -1,4 +1,4 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const nameScores_1 = require("./Challenges/nameScores");
-(0, nameScores_1.sumNames)();
+const nonAbundantSums_1 = require("./Challenges/nonAbundantSums");
+(0, nonAbundantSums_1.sumOfIntegers)();

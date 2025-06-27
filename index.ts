@@ -1,4 +1,4 @@
-import { sumNames } from "./Challenges/nameScores";
+import { sumOfIntegers } from "./Challenges/nonAbundantSums";
 
 
-sumNames();
+sumOfIntegers();
