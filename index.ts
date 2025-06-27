@@ -1,3 +1,3 @@
-import { factorialDigitSum  } from "./Challenges/factorialDigitSum";
+import { Sundays  } from "./Challenges/CountingSundays";
 
-factorialDigitSum()
+Sundays()
