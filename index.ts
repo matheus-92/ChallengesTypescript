@@ -1,1 +1,4 @@
-import { sumNames  } from "./Challenges/nameScores";
+import { sumNames } from "./Challenges/nameScores";
+
+
+sumNames();

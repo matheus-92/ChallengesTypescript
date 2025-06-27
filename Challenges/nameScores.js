@@ -10,9 +10,33 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.sumNames = sumNames;
+const createNumbersArray_1 = require("../Helpers/createNumbersArray");
 const readFile_1 = require("../Helpers/readFile");
+const sumArrays_1 = require("../Helpers/sumArrays");
+function getLettersIndex(name) {
+    let indexes = [];
+    indexes = name.split('').map(char => {
+        const code = char.charCodeAt(0);
+        if (code >= 65 && code <= 90) {
+            return code - 64;
+        }
+        return -1;
+    });
+    return indexes;
+}
 function sumNames() {
     return __awaiter(this, void 0, void 0, function* () {
-        console.log(yield (0, readFile_1.readFile)("D:\\Downloads\\0022_names.txt"));
+        let name = yield (0, readFile_1.readFile)("D:\\Downloads\\0022_names.txt");
+        let array = name.replace(/"/g, '').split(",");
+        let scores = [];
+        array.sort();
+        for (let i = 0; i < array.length; i++) {
+            let sumOfLetters = getLettersIndex(array[i]).reduce((acc, cur) => acc += cur, 0);
+            let result = sumOfLetters * (i + 1);
+            let number = (0, createNumbersArray_1.createArray)(result);
+            scores.push(number);
+        }
+        let sumResult = scores.reduce((acc, cur) => (0, sumArrays_1.sumArray)(acc, cur));
+        console.log(sumResult);
     });
 }
