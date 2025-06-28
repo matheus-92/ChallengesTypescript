@@ -1,4 +1,4 @@
-import { distinctPowers } from "./Challenges/distinctPowers";
+import { fibonacciNumber } from "./Challenges/thousandDigitFibonacci";
 
 
-distinctPowers();
+fibonacciNumber();
