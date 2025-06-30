@@ -1,4 +1,4 @@
-import { diagonalSum } from "./Challenges/numberSpiralDiagonals";
+import { findMedianSortedArrays } from "./Challenges/medianOfTwoSortedArrays";
 
 
-diagonalSum();
+findMedianSortedArrays([1,2],[3,4]);
