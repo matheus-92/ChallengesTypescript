@@ -1,4 +1,4 @@
-import { quadraticPrimes } from "./Challenges/quadraticPrimes";
+import { diagonalSum } from "./Challenges/numberSpiralDiagonals";
 
 
-quadraticPrimes();
+diagonalSum();
