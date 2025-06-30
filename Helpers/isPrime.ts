@@ -1,11 +1,11 @@
 export function isPrime(number:number){
 
-    if(number == 1)
+    if(number < 2)
     {
         return false;
     }
 
-    if(number == 2 ||number == 3 || number == 5)
+    if(number == 2 ||number == 3)
     {
         return true;
     } 
@@ -14,20 +14,18 @@ export function isPrime(number:number){
     {
         return false;
     }
-    else 
+    
+    let numberLimit = Math.sqrt(number);
+
+    for(let i = 5; i <= numberLimit; i+=6)
     {
-        let numberLimit = Math.sqrt(number);
-
-        for(let i = 5; i <= numberLimit; i+=6)
+        if(number % i ==0 || number % (i+2)==0)
         {
-            if(number % i ==0 || number % (i+2)==0)
-            {
-                return false;
-            }
-
+            return false;
         }
 
-        return true;
     }
+
+    return true;
         
 }

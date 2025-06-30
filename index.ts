@@ -1,4 +1,4 @@
-import { fibonacciNumber } from "./Challenges/thousandDigitFibonacci";
+import { quadraticPrimes } from "./Challenges/quadraticPrimes";
 
 
-fibonacciNumber();
+quadraticPrimes();

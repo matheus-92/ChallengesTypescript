@@ -1,4 +1,4 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const thousandDigitFibonacci_1 = require("./Challenges/thousandDigitFibonacci");
-(0, thousandDigitFibonacci_1.fibonacciNumber)();
+const quadraticPrimes_1 = require("./Challenges/quadraticPrimes");
+(0, quadraticPrimes_1.quadraticPrimes)();
